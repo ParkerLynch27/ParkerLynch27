@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "RewardVault Auto-Sync",
+  "version": "1.0",
+  "description": "Automatically reads your live Microsoft Rewards points and syncs them to RewardVault.",
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": [
+    "https://bing.com*",
+    "https://*.netlify.app/*",
+    "https://*.github.io/*"
+  ],
+  "action": {
+    "default_title": "Auto-Sync Microsoft Points to RewardVault"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
